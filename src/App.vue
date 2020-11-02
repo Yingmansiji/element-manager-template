@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view />
+    <router-view/>
   </div>
 </template>
 
@@ -8,8 +8,8 @@
 
 export default {
   name: 'App',
-  data(){
-    return{
+  data() {
+    return {
       timer: null, // 定时器
       timerLogin: null, // 定时器--登录用
       isAlert: false  // 登录过期提示弹窗是否弹出
@@ -27,10 +27,10 @@ export default {
   methods: {
     // 验证是否登录
     async api_login() {
-      let that = this;
-      let result = await this.$api.isLogin();
-      console.log(result.data.data.isLogin)
-      if (result.data.data.isLogin == false) {
+      /*
+       let that = this;
+       let result = await this.$api.isLogin();
+       if (result.data.data.isLogin == false) {
         that.isAlert = true;
         this.$msgbox.alert("登录超时，请重新登录！", "提示", {
           confirmButtonText: "确定",
@@ -46,6 +46,7 @@ export default {
             });
         return false;
       }
+       */
     }
   },
   beforeDestroy() {

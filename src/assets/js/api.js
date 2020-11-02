@@ -154,7 +154,7 @@ export function d(params){
 
 // 验证登录
 export function isLogin(){
-  return axios.get(``)
+  return get(``)
 }
 
 // 获取城市信息

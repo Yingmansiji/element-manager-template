@@ -75,10 +75,10 @@ export default {
       cities: [],
       rules: {
         cityId: [
-          {required:true, message:"请选择城市", trigger:blur}
+          {required: true, message: "请选择城市", trigger: blur}
         ],
-        className:[
-          {required:true, message:"请输入知识库分类名称", trigger:blur}
+        className: [
+          {required: true, message: "请输入知识库分类名称", trigger: blur}
         ]
       },
       submitDisable: false //防重复提交
